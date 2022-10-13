@@ -81,7 +81,7 @@ img {
 .change-theme {
   position: absolute;
   top: 1.5rem;
-  right: 0;
+  right: 0rem;
   font-size: 1.25rem;
   color: var(--title-color);
   cursor: pointer;
@@ -147,7 +147,16 @@ body.dark-theme {
 }
 
 .profile__container {
-  row-gap: 2rem;
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+}
+
+.profile__content-two {
+  display: flex;
+  flex-direction: column;
+  width: 560px;
+  margin-top: 2.5rem;
+  /* margin-right: 3rem; */
 }
 
 .profile__data {
@@ -213,7 +222,8 @@ body.dark-theme {
 .profile__info {
   grid-template-columns: repeat(3, max-content);
   justify-content: center;
-  column-gap: 2.5rem;
+  /* column-gap: 2.5rem; */
+  margin-top: 2.5rem;
 }
 
 .profile__info-group {
@@ -234,7 +244,7 @@ body.dark-theme {
 .profile__buttons-small {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
 }
 
 .profile__buttons {
@@ -243,6 +253,15 @@ body.dark-theme {
 
 .profile__buttons-small {
   column-gap: .25rem;
+}
+
+.profile__cv {
+  text-align: center;
+  width: 450px;
+}
+
+.cv__text {
+  color: var(--title-color);
 }
 
 /*=============== BUTTONS ===============*/
@@ -545,5 +564,13 @@ body.dark-theme {
 
   .footer__copy {
     margin: 4.5rem 0 2.5rem;
+  }
+  
+} 
+
+/* for desktop */
+@media screen and (min-width: 1206px) {
+  .projects__content {
+    grid-template-columns: repeat(3, 365px);
   }
 }
