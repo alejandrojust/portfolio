@@ -291,7 +291,6 @@ body.dark-theme {
 
 .profile__summary {
   display: flex;
-  flex-direction: row;
   margin-top: 2.5rem;
   justify-content: center;
 }
@@ -504,6 +503,13 @@ body.dark-theme {
 }
 
 /*=============== BREAKPOINTS ===============*/
+/* for summary lecture */
+@media screen and (max-width: 776px) {
+  .profile__summary {
+    flex-direction: column;
+  }
+}
+
 /* For small devices */
 @media screen and (max-width: 320px) {
   .container {
@@ -514,6 +520,7 @@ body.dark-theme {
   .profile__info {
     column-gap: 1.5rem;
   }
+  
   .profile__buttons {
     flex-direction: column;
     row-gap: 1rem;
