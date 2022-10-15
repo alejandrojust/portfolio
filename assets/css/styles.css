@@ -503,13 +503,6 @@ body.dark-theme {
 }
 
 /*=============== BREAKPOINTS ===============*/
-/* for summary lecture */
-@media screen and (max-width: 776px) {
-  .profile__summary {
-    flex-direction: column;
-  }
-}
-
 /* For small devices */
 @media screen and (max-width: 320px) {
   .container {
@@ -544,7 +537,18 @@ body.dark-theme {
   }
 }
 
+/* for summary lecture */
+@media screen and (max-width: 776px) {
+  .profile__summary {
+    flex-direction: column;
+  }
+}
+
 @media screen and (min-width: 776px) {
+  .profile__summary {
+    flex-direction: row;
+  }
+  
   .projects__content,
   .skills__content {
     grid-template-columns: repeat(2, 365px);
