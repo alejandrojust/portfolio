@@ -326,7 +326,11 @@ body.dark-theme {
 
 .profile__summary-subtitle {
   color: var(--title-color);
+}
+
+.profile__summary-time {
   margin-bottom: 1rem;
+  color: var(--title-color);
 }
 
 .profile__summary-para {
@@ -334,7 +338,7 @@ body.dark-theme {
 }
 
 #group-bar {
-  height: 35%;
+  height: 43%;
 }
 
 /*=============== FILTERS TABS===============*/
