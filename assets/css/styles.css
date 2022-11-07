@@ -542,7 +542,7 @@ body.dark-theme {
 }
 
 /* for summary lecture */
-@media screen and (max-width: 776px) {
+@media screen and (max-width: 775px) {
   .profile__summary {
     flex-direction: column;
   }
