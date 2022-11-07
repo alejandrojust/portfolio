@@ -303,6 +303,7 @@ body.dark-theme {
 
 .profile__summary-subgroup {
   position: relative;
+  height: 43%;
 }
 
 .profile__summary-subgroup::before {
