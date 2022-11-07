@@ -305,7 +305,7 @@ body.dark-theme {
   position: relative;
 }
 
-/* .profile__summary-subgroup::before {
+.profile__summary-subgroup::before {
   content: "";
   position: absolute;
   width: 13px;
@@ -316,7 +316,7 @@ body.dark-theme {
   border-radius: 50px;
   background: var(--title-color);
   border: 1px solid var(--title-color);
-} */
+}
 
 .profile__summary-title {
   color: var(--title-color);
@@ -337,9 +337,9 @@ body.dark-theme {
   margin-bottom: 2rem;
 }
 
-#group-bar {
+/* #group-bar {
   height: 43%;
-}
+} */
 
 /*=============== FILTERS TABS===============*/
 .filters__content {
