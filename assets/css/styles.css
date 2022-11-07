@@ -223,7 +223,7 @@ body.dark-theme {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  /* column-gap: 2.5rem; */
+  column-gap: 2.5rem;
   margin-top: 2.5rem;
 }
 
