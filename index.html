@@ -1,483 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon"/>
+  <!--=============== REMIX ICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"/>
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <!--=============== SCROLLREVEAL ===============-->
+  <script src="assets/js/scrollreveal.min.js" defer></script>
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js" defer></script>
+  <title>Alejandrojust Portfolio</title>
+</head>
+<body>
+  <!--=============== HEADER ===============-->
+  <header class="profile container">
+    <!-- Theme button -->
+    <i class="ri-moon-line change-theme" id="theme-button"></i>
 
-        <!--=============== FAVICON ===============-->
-        <link
-            rel="shortcut icon"
-            href="assets/img/favicon.png"
-            type="image/x-icon"
-        />
-
-        <!--=============== REMIX ICONS ===============-->
-        <link
-            href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-            rel="stylesheet"
-        />
-
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css" />
-
-        <title>Alejandrojust Portfolio</title>
-    </head>
-    <body>
-        <!--=============== HEADER ===============-->
-        <header class="profile container">
-            <!-- Theme button -->
-            <i class="ri-moon-line change-theme" id="theme-button"></i>
-
-            <div class="profile__container">
-                <div class="profile__content">
-                    <div class="profile__data">
-                        <div class="profile__img">
-                            <div class="profile__border">
-                                <div class="profile__perfil">
-                                    <!-- Insert your image, according to the example size of the portfolio -->
-                                    <img src="assets/img/perfil.png" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="profile__details">
-                            <h2 class="profile__name">Alejandrojust</h2>
-                            <h3 class="profile__profession">
-                                Frontend Developer
-                            </h3>
-
-                            <ul class="profile__social">
-                                <a
-                                    href="https://github.com/alejandrojust/"
-                                    target="_blank"
-                                    class="profile__social-link"
-                                >
-                                    <i class="ri-github-line"></i>
-                                </a>
-                                <a
-                                    href="https://t.me/alejandrojust"
-                                    target="_blank"
-                                    class="profile__social-link"
-                                >
-                                    <i class="ri-telegram-line"></i>
-                                </a>
-                                <a
-                                    href="https://www.linkedin.com/in/alejandrojust"
-                                    target="_blank"
-                                    class="profile__social-link"
-                                >
-                                    <i class="ri-linkedin-box-line"></i>
-                                </a>
-                                <!-- <a
-                                    href="https://discord.gg/"
-                                    target="_blank"
-                                    class="profile__social-link"
-                                >
-                                    <i class="ri-discord-line"></i>
-                                </a> -->
-                                <a
-                                href="mailto:mralejandrojust@gmail.com"
-                                target="_blank"
-                                class="profile__social-link"
-                                >
-                                    <i class="ri-mail-line"></i>
-                                </a>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="profile__info flex">
-                        <div class="profile__info-group">
-                            <h3 class="profile__info-number">+1</h3>
-                            <p class="profile__info-description">
-                                Years of <br />
-                                experience
-                            </p>
-                        </div>
-                        <div class="profile__info-group">
-                            <h3 class="profile__info-number">7</h3>
-                            <p class="profile__info-description">
-                                Completed <br />
-                                projects
-                            </p>
-                        </div>
-                        <div class="profile__info-group">
-                            <h3 class="profile__info-number">6</h3>
-                            <p class="profile__info-description">
-                                Currently <br />
-                                gained skills
-                            </p>
-                        </div>
-                    </div>
-                </div>
+    <div class="profile__container">
+      <div class="profile__content">
+        <div class="profile__data">
+          <div class="profile__img">
+            <div class="profile__border">
+              <div class="profile__perfil">
+                <!-- Insert your image, according to the example size of the portfolio -->
+                <img src="assets/img/perfil.png" alt="" />
+              </div>
             </div>
-        </header>
+          </div>
+          <div class="profile__details">
+            <h2 class="profile__name">Alejandrojust</h2>
+            <h3 class="profile__profession">
+              Frontend Developer
+            </h3>
 
-        <!--=============== MAIN ===============-->
-        <main class="main">
-            <section class="filters container">
-                <!--=============== SUMMARY ===============-->
-                <div class="summary__container">
-                    <div class="summary__card">
-                        <h3
-                            class="summary__title"
-                            style="margin-top: 2.5rem"
-                        >
-                            Summary
-                        </h3>
-                        <div
-                            class="summary__group"
-                            style="margin-right: 3rem"
-                        >
-                            <div class="summary__subgroup">
-                                <h4 class="summary__subtitle">
-                                    Website
-                                </h4>
-                                <p class="summary__para">
-                                    I have +1 years of experience in designing,
-                                    planning and developing Websites with HTML/CSS and JavaScript, i have
-                                    mastered the use of different techniques to
-                                    carry out the project in an efficient way,
-                                    my aim is to guarantee quality.
-                                </p>
-                            </div>
-                            <div class="summary__subgroup">
-                                <h4 class="summary__subtitle">
-                                    Flutter
-                                </h4>
-                                <p class="summary__para">
-                                    I have been using flutter for a few months in my
-                                    projects, I am still reinforcing my
-                                    knowledge on the subject, however, I can
-                                    develop in a way that does not compromise
-                                    the quality of the project.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="summary__card">
-                        <h3
-                            class="summary__title"
-                            style="margin-top: 2.5rem"
-                        >
-                            Experience
-                        </h3>
-                        <div class="summary__group">
-                            <div class="summary__subgroup">
-                                <h4 class="summary__subtitle">
-                                    JusTrade Developer
-                                </h4>
-                                <h5 class="summary__time">
-                                    2021 - present
-                                </h5>
-                                <p class="summary__para">
-                                    This is a personal project developed in
-                                    order to give customers the best possible
-                                    tools for trading, it is not yet available
-                                    to the public, as is still in
-                                    development and testing, but it is planned to be
-                                    announced soon.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ri-external-link-line -->
+            <ul class="profile__social">
+              <a href="https://github.com/alejandrojust/" target="_blank" class="profile__social-link"> 
+                <i class="ri-github-line"></i>
+              </a>
+
+              <a href="https://t.me/alejandrojust" target="_blank" class="profile__social-link">
+                <i class="ri-telegram-line"></i>
+              </a>
+
+              <a href="https://www.linkedin.com/in/alejandrojust" target="_blank" class="profile__social-link">
+                <i class="ri-linkedin-box-line"></i>
+              </a>
+
+              <!-- <a href="https://discord.gg/" target="_blank" class="profile__social-link">
+                <i class="ri-discord-line"></i>
+              </a> -->
+
+              <a href="mailto:mralejandrojust@gmail.com" target="_blank" class="profile__social-link">
+                <i class="ri-mail-line"></i>
+              </a>
+
+            </ul>
+          </div>
+        </div>
+        <div class="profile__info flex">
+          <div class="profile__info-group">
+            <h3 class="profile__info-number">+1</h3>
+            <p class="profile__info-description">
+              Years of <br/>
+              experience
+            </p>
+          </div>
+          <div class="profile__info-group">
+            <h3 class="profile__info-number">7</h3>
+            <p class="profile__info-description">
+              Completed <br/>
+              projects
+            </p>
+          </div>
+          <div class="profile__info-group">
+            <h3 class="profile__info-number">6</h3>
+            <p class="profile__info-description">
+              Currently <br/>
+              gained skills
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+    <!--=============== MAIN ===============-->
+  <main class="main">
+    <section class="filters container">
+      <!--=============== SUMMARY ===============-->
+      <div class="summary__container">
+        <div class="summary__card">
+          <h3 class="summary__title" style="margin-top: 2.5rem">
+            Summary
+          </h3>
+          <div class="summary__group" style="margin-right: 3rem">
+            <div class="summary__subgroup">
+              <h4 class="summary__subtitle">
+                Website
+              </h4>
+              <p class="summary__para">
+                I have +1 years of experience in designing,
+                planning and developing Websites with HTML/CSS and JavaScript, i have
+                mastered the use of different techniques to
+                carry out the project in an efficient way,
+                my aim is to guarantee quality.
+              </p>
+            </div>
+            <div class="summary__subgroup">
+              <h4 class="summary__subtitle">
+                Flutter
+              </h4>
+              <p class="summary__para">
+                I have been using flutter for a few months in my
+                projects, I am still reinforcing my
+                knowledge on the subject, however, I can
+                develop in a way that does not compromise
+                the quality of the project.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="summary__card">
+          <h3 class="summary__title" style="margin-top: 2.5rem">
+            Experience
+          </h3>
+          <div class="summary__group">
+            <div class="summary__subgroup">
+              <h4 class="summary__subtitle">
+                JusTrade Developer
+              </h4>
+                <h5 class="summary__time">
+                  2021 - present
+                </h5>
+                <p class="summary__para">
+                  This is a personal project developed in
+                  order to give customers the best possible
+                  tools for trading, it is not yet available
+                  to the public, as is still in
+                  development and testing, but it is planned to be
+                  announced soon.
+                </p>
+            </div>
+          </div>
+        </div>
+        <!-- ri-external-link-line -->
+      </div>
+      <!--=============== FILTERS TABS ===============-->
+      <ul class="filters__content">
+        <button class="filters__button filter-tab-active" data-target="#projects">
+          Projects
+        </button>
+        <button class="filters__button" data-target="#skills">
+          Skills
+        </button>
+      </ul>
+
+      <div class="filters__sections">
+        <!--=============== PROJECTS ===============-->
+        <div class="projects__content grid filters__active" data-content id="projects">
+          <article class="projects__card">
+            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+            <img src="assets/img/project-01.jpg" alt="project-01" class="projects__img"/>
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Web</span>
+                <h3 class="projects__title">
+                  Frontend Mentor Challenges
+                </h3>
+                <a href="https://alejandrojust.github.io/frontendmentor/" target="_blank" class="projects__button button button__small">
+                  <i class="ri-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <img src="assets/img/project-02.jpg" alt="project-02" class="projects__img"/>
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Web</span>
+                <h3 class="projects__title">
+                  Frontend Mentor Challenges-Flutter
+                </h3>
+                <a href="https://alejandrojust.github.io/frontendmentor-flutter/" target="_blank" class="projects__button button button__small">
+                  <i class="ri-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <img src="assets/img/project-03.jpg" alt="project-03" class="projects__img"/>
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Web</span>
+                <h3 class="projects__title">
+                  Project Z
+                </h3>
+                <a href="https://alejandrojust.github.io/project-z/" target="_blank" class="projects__button button button__small">
+                  <i class="ri-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!--=============== SKILLS ===============-->
+        <div class="skills__content grid" data-content id="skills">
+          <div class="skills__area">
+            <h3 class="skills__title"></h3>
+
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__container">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <h3 class="skills__name">
+                      HTML
+                    </h3>
+                  </div>
+                  <span class="skills__level">Intermediate</span>
                 </div>
-                <!--=============== FILTERS TABS ===============-->
-                <ul class="filters__content">
-                    <button
-                        class="filters__button filter-tab-active"
-                        data-target="#projects"
-                    >
-                        Projects
-                    </button>
-                    <button class="filters__button" data-target="#skills">
-                        Skills
-                    </button>
-                </ul>
+              </div>
 
-                <div class="filters__sections">
-                    <!--=============== PROJECTS ===============-->
-                    <div
-                        class="projects__content grid filters__active"
-                        data-content
-                        id="projects"
-                    >
-                        <article class="projects__card">
-                            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
-                            <img
-                                src="assets/img/project-01.jpg"
-                                alt="project-01"
-                                class="projects__img"
-                            />
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Web</span>
-                                    <h3 class="projects__title">
-                                        interactive-rating-component-main
-                                    </h3>
-                                    <a
-                                        href="https://alejandrojust.github.io/interactive-rating-component-main/"
-                                        target="_blank"
-                                        class="projects__button button button__small"
-                                    >
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="projects__card">
-                            <img
-                                src="assets/img/project-02.jpg"
-                                alt="project-02"
-                                class="projects__img"
-                            />
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Web</span>
-                                    <h3 class="projects__title">
-                                        faq-accordion-card-main
-                                    </h3>
-                                    <a
-                                        href="https://alejandrojust.github.io/faq-accordion-card-main/"
-                                        target="_blank"
-                                        class="projects__button button button__small"
-                                    >
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="projects__card">
-                            <img
-                                src="assets/img/project-03.jpg"
-                                alt="project-03"
-                                class="projects__img"
-                            />
-
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Web</span>
-                                    <h3 class="projects__title">
-                                        social-proof-section
-                                    </h3>
-                                    <a
-                                        href="https://alejandrojust.github.io/social-proof-section/"
-                                        target="_blank"
-                                        class="projects__button button button__small"
-                                    >
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="projects__card">
-                            <img
-                                src="assets/img/project-04.jpg"
-                                alt="project-04"
-                                class="projects__img"
-                            />
-
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Web</span>
-                                    <h3 class="projects__title">
-                                        news-homepage-main
-                                    </h3>
-                                    <a
-                                        href="https://alejandrojust.github.io/news-homepage-main/"
-                                        target="_blank"
-                                        class="projects__button button button__small"
-                                    >
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="projects__card">
-                            <img
-                                src="assets/img/project-05.jpg"
-                                alt="project-05"
-                                class="projects__img"
-                            />
-
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Web</span>
-                                    <h3 class="projects__title">
-                                        notifications-page-main
-                                    </h3>
-                                    <a
-                                        href="https://alejandrojust.github.io/notifications-page-main/"
-                                        target="_blank"
-                                        class="projects__button button button__small"
-                                    >
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="projects__card">
-                            <img
-                                src="assets/img/project-06.jpg"
-                                alt="project-06"
-                                class="projects__img"
-                            />
-
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Web</span>
-                                    <h3 class="projects__title">
-                                        interactive-card-details-form-main
-                                    </h3>
-                                    <a
-                                        href="https://alejandrojust.github.io/interactive-card-details-form-main/"
-                                        target="_blank"
-                                        class="projects__button button button__small"
-                                    >
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="projects__card">
-                            <img
-                                src="assets/img/project-07.jpg"
-                                alt="project-07"
-                                class="projects__img"
-                            />
-
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Web</span>
-                                    <h3 class="projects__title">
-                                        expenses-chart-component-main
-                                    </h3>
-                                    <a
-                                        href="https://alejandrojust.github.io/expenses-chart-component-main/"
-                                        target="_blank"
-                                        class="projects__button button button__small"
-                                    >
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-
-                    <!--=============== SKILLS ===============-->
-                    <div class="skills__content grid" data-content id="skills">
-                        <div class="skills__area">
-                            <h3 class="skills__title"></h3>
-
-                            <div class="skills__box">
-                                <div class="skills__group">
-                                    <div class="skills__container">
-                                        <div class="skills__data">
-                                            <i
-                                                class="ri-checkbox-circle-line"
-                                            ></i>
-                                            <h3 class="skills__name">HTML</h3>
-                                        </div>
-                                        <span class="skills__level"
-                                            >Intermediate</span
-                                        >
-                                    </div>
-                                </div>
-
-                                <div class="skills__group">
-                                    <div class="skills__container">
-                                        <div class="skills__data">
-                                            <i
-                                                class="ri-checkbox-circle-line"
-                                            ></i>
-                                            <h3 class="skills__name">CSS</h3>
-                                        </div>
-                                        <span class="skills__level"
-                                            >Intermediate</span
-                                        >
-                                    </div>
-                                </div>
-
-                                <div class="skills__group">
-                                    <div class="skills__container">
-                                        <div class="skills__data">
-                                            <i
-                                                class="ri-checkbox-circle-line"
-                                            ></i>
-                                            <h3 class="skills__name">
-                                                JavaScript
-                                            </h3>
-                                        </div>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="skills__area">
-                            <h3 class="skills__title"></h3>
-
-                            <div class="skills__box">
-                                <div class="skills__group">
-                                    <div class="skills__container">
-                                        <div class="skills__data">
-                                            <i
-                                                class="ri-checkbox-circle-line"
-                                            ></i>
-                                            <h3 class="skills__name">Dart</h3>
-                                        </div>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__group">
-                                    <div class="skills__container">
-                                        <div class="skills__data">
-                                            <i
-                                                class="ri-checkbox-circle-line"
-                                            ></i>
-                                            <h3 class="skills__name">
-                                                Flutter
-                                            </h3>
-                                        </div>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__group">
-                                    <div class="skills__container">
-                                        <div class="skills__data">
-                                            <i
-                                                class="ri-checkbox-circle-line"
-                                            ></i>
-                                            <h3 class="skills__name">Python</h3>
-                                        </div>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              <div class="skills__group">
+                <div class="skills__container">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <h3 class="skills__name">
+                      CSS
+                    </h3>
+                  </div>
+                  <span class="skills__level">Intermediate</span>
                 </div>
-            </section>
-        </main>
+              </div>
 
-        <!--=============== FOOTER ===============-->
-        <footer class="footer container">
-            <span class="footer__copy">
-                &#169; Alejandrojust. All rights reserved
-            </span>
-        </footer>
+              <div class="skills__group">
+                <div class="skills__container">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <h3 class="skills__name">
+                      JavaScript
+                    </h3>
+                  </div>
+                  <span class="skills__level">Basic</span>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src="assets/js/scrollreveal.min.js"></script>
+          <div class="skills__area">
+            <h3 class="skills__title"></h3>
 
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-    </body>
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__container">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <h3 class="skills__name">
+                      Dart
+                    </h3>
+                  </div>
+                  <span class="skills__level">Basic</span>
+                </div>
+              </div>
+
+              <div class="skills__group">
+                <div class="skills__container">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <h3 class="skills__name">
+                      Flutter
+                    </h3>
+                  </div>
+                  <span class="skills__level">Basic</span>
+                </div>
+              </div>
+
+              <div class="skills__group">
+                <div class="skills__container">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <h3 class="skills__name">
+                      Python
+                    </h3>
+                  </div>
+                  <span class="skills__level">Basic</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--=============== FOOTER ===============-->
+  <footer class="footer container">
+    <span class="footer__copy">
+      &#169; Alejandrojust. All rights reserved
+    </span>
+  </footer>
+</body>
 </html>
