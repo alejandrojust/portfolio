@@ -286,24 +286,24 @@ body.dark-theme {
 
 /*=============== SUMMARY ===============*/
 
-.profile__summary {
+.summary__container {
   display: flex;
   margin-top: 2.5rem;
   justify-content: center;
 }
 
-.profile__summary-group {
+.summary__group {
   border-left: 1px solid var(--title-color);
   padding-left: 1rem;
   margin-left: 2rem;
 }
 
-.profile__summary-subgroup {
+.summary__subgroup {
   position: relative;
   height: 43%;
 }
 
-.profile__summary-subgroup::before {
+.summary__subgroup::before {
   content: "";
   position: absolute;
   width: 13px;
@@ -316,22 +316,22 @@ body.dark-theme {
   border: 1px solid var(--title-color);
 }
 
-.profile__summary-title {
+.summary__title {
   color: var(--title-color);
   margin-bottom: 1rem;
   margin-left: 1.5rem;
 }
 
-.profile__summary-subtitle {
+.summary__subtitle {
   color: var(--title-color);
 }
 
-.profile__summary-time {
+.summary__time {
   margin-bottom: 1rem;
   color: var(--title-color);
 }
 
-.profile__summary-para {
+.summary__para {
   margin-bottom: 2rem;
 }
 
@@ -555,13 +555,13 @@ body.dark-theme {
 
 /* for summary lecture */
 @media screen and (max-width: 775px) {
-  .profile__summary {
+  .summary__container {
     flex-direction: column;
   }
 }
 
 @media screen and (min-width: 776px) {
-  .profile__summary {
+  .summary__container {
     flex-direction: row;
   }
   
