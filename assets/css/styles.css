@@ -32,6 +32,7 @@
     --normal-font-size: 0.938rem;
     --small-font-size: 0.813rem;
     --smaller-font-size: 0.75rem;
+    --title-font-size: 20px
 }
 
 @media screen and (min-width: 968px) {
@@ -41,6 +42,7 @@
         --normal-font-size: 1rem;
         --small-font-size: 0.875rem;
         --smaller-font-size: 0.813rem;
+        --title-font-size: 22px
     }
 }
 
@@ -52,11 +54,17 @@
 }
 
 body {
+    min-width: 300px;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
     color: var(--text-color);
     transition: 0.3s; /* For animation dark mode */
+}
+
+main {
+    max-width: 1400px;
+    margin: auto;
 }
 
 h1,
@@ -133,7 +141,6 @@ body.dark-theme {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-    max-width: 1206px;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 }
@@ -223,29 +230,6 @@ body.dark-theme {
     color: var(--first-color);
 }
 
-.profile__info {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    column-gap: 2.5rem;
-    margin-top: 2.5rem;
-}
-
-.profile__info-group {
-    text-align: center;
-}
-
-.profile__info-number {
-    font-size: var(--normal-font-size);
-    margin-bottom: 0.25rem;
-}
-
-.profile__info-description {
-    font-size: var(--smaller-font-size);
-    font-weight: 500;
-}
-
 .profile__buttons {
     column-gap: 1rem;
 }
@@ -294,6 +278,7 @@ body.dark-theme {
 .summary__container {
     display: flex;
     margin-top: 2.5rem;
+    margin-bottom: 6.5rem;
     justify-content: center;
 }
 
@@ -322,8 +307,9 @@ body.dark-theme {
 }
 
 .summary__title {
+    font-size: var(--title-font-size);
     color: var(--title-color);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     margin-left: 1.5rem;
 }
 
@@ -422,20 +408,17 @@ body.dark-theme {
 }
 
 /*=============== SKILLS ===============*/
-.skills__content {
-    row-gap: 3.5rem;
-}
-
 .skills__title {
-    font-size: var(--h3-font-size);
-    text-align: center;
-    margin-bottom: 1.5rem;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 2rem;
 }
 
 .skills__box {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    column-gap: 3rem;
+    gap: 1rem;
 }
 
 .skills__group {
@@ -450,7 +433,7 @@ body.dark-theme {
 }
 
 .skills__data i {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--first-color);
 }
 
@@ -459,13 +442,9 @@ body.dark-theme {
 }
 
 .skills__name {
-    font-size: var(--normal-font-size);
+    font-size: 15px;
     font-weight: 500;
     line-height: 18px;
-}
-
-.skills__level {
-    font-size: var(--smaller-font-size);
 }
 
 /* Hide and show projects & skills */
@@ -523,10 +502,6 @@ body.dark-theme {
         margin: 0 auto;
     }
 
-    .profile__info {
-        column-gap: 1.5rem;
-    }
-
     .profile__buttons {
         flex-direction: column;
         row-gap: 1rem;
@@ -547,16 +522,33 @@ body.dark-theme {
     }
 }
 
-/* For medium devices */
-@media screen and (min-width: 576px) {
-    .projects__content {
-        grid-template-columns: 332px;
-        justify-content: center;
+/* for summary lecture */
+@media screen and (max-width: 575px) {
+    .summary__container {
+        flex-direction: column;
     }
 
+    .skills__content {
+        justify-content: center;
+        gap: 5rem;
+    }
+}
+
+/* For medium devices */
+@media screen and (min-width: 576px) {
     .filters__content {
         width: 332px;
-        margin: 3rem auto;
+        margin: 6rem auto;
+    }
+
+    .skills__content {
+        grid-template-columns: repeat(2, 30%);
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .skills__area {
+        max-width: 150px;
     }
 }
 
@@ -568,28 +560,18 @@ body.dark-theme {
 }
 
 @media screen and (min-width: 776px) {
+    .projects__content {
+        grid-template-columns: repeat(2, 45%);
+        justify-content: center;
+    }
+
     .summary__container {
         flex-direction: row;
-    }
-
-    .projects__content,
-    .skills__content {
-        grid-template-columns: repeat(2, 365px);
-    }
-
-    .skills__content {
-        justify-content: center;
-        column-gap: 2rem;
     }
 }
 
 /* For large devices */
 @media screen and (min-width: 992px) {
-    .container {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     .change-theme {
         top: 2.5rem;
         right: 2.5rem;
@@ -615,15 +597,7 @@ body.dark-theme {
     }
 
     .profile__profession {
-        margin-bottom: 1.5rem;
-    }
-
-    .profile__info {
-        column-gap: 3rem;
-    }
-
-    .profile__info-description {
-        font-size: var(--small-font-size);
+        margin-bottom: 1rem;
     }
 
     .profile__buttons {
@@ -638,19 +612,7 @@ body.dark-theme {
         padding: 1.5rem;
     }
 
-    .skills__title {
-        font-size: var(--normal-font-size);
-        margin-bottom: 2.5rem;
-    }
-
     .footer__copy {
         margin: 4.5rem 0 2.5rem;
-    }
-}
-
-/* for desktop */
-@media screen and (min-width: 1206px) {
-    .projects__content {
-        grid-template-columns: repeat(3, 365px);
     }
 }
