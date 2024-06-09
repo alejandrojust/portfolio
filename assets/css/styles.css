@@ -283,7 +283,7 @@ body.dark-theme {
 }
 
 .summary__group {
-    border-left: 1px solid var(--title-color);
+    border-left: 1px solid var(--first-color);
     padding-left: 1rem;
     margin-left: 2rem;
 }
@@ -302,8 +302,8 @@ body.dark-theme {
     top: 0px;
     margin-right: 10rem;
     border-radius: 50px;
-    background: var(--title-color);
-    border: 1px solid var(--title-color);
+    background: var(--first-color);
+    border: 1px solid var(--first-color);
 }
 
 .summary__title {
@@ -530,7 +530,7 @@ body.dark-theme {
 
     .skills__content {
         justify-content: center;
-        gap: 5rem;
+        gap: 3rem;
     }
 }
 
@@ -542,7 +542,7 @@ body.dark-theme {
     }
 
     .skills__content {
-        grid-template-columns: repeat(2, 30%);
+        grid-template-columns: repeat(3, 20%);
         justify-content: center;
         justify-items: center;
     }
