@@ -466,7 +466,7 @@ body.dark-theme {
     display: block;
     margin: 3rem 0 2rem;
     text-align: center;
-    font-size: var(--smaller-font-size);
+    font-size: var(--small-font-size);
     color: var(--text-color);
 }
 
