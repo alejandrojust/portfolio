@@ -282,6 +282,10 @@ body.dark-theme {
     justify-content: center;
 }
 
+.summary__card {
+    width: 100%;
+}
+
 .summary__group {
     border-left: 1px solid var(--first-color);
     padding-left: 1rem;
@@ -289,8 +293,11 @@ body.dark-theme {
 }
 
 .summary__subgroup {
+    display: flex;
+    flex-direction: column;
     position: relative;
     height: 43%;
+    gap: 0.6rem;
 }
 
 .summary__subgroup::before {
@@ -318,7 +325,6 @@ body.dark-theme {
 }
 
 .summary__time {
-    margin-bottom: 1rem;
     color: var(--title-color);
 }
 
@@ -567,6 +573,10 @@ body.dark-theme {
 
     .summary__container {
         flex-direction: row;
+    }
+
+    .summary__card {
+        width: 50%;
     }
 }
 
