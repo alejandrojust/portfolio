@@ -279,7 +279,7 @@ body.dark-theme {
 .summary__container {
     display: flex;
     margin-top: 1.5rem;
-    /* margin-bottom: 2rem; */
+    gap: 2.5rem;
     justify-content: center;
 }
 
@@ -335,7 +335,8 @@ body.dark-theme {
 
 /*=============== FILTERS TABS===============*/
 .filters__content {
-    margin: 2rem 0 2.5rem;
+    width: 300px;
+    margin: 2.5rem auto;
     background-color: var(--text-color-lighten);
     padding: 0.375rem;
     border-radius: 0.75rem;
@@ -417,7 +418,7 @@ body.dark-theme {
 /*=============== SKILLS ===============*/
 .skills__title {
     font-size: 20px;
-    text-align: left;
+    text-align: center;
     margin-bottom: 2rem;
 }
 
@@ -532,6 +533,7 @@ body.dark-theme {
 /* for summary lecture */
 @media screen and (max-width: 575px) {
     .summary__container {
+        margin-top: 3rem;
         flex-direction: column;
     }
 
