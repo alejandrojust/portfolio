@@ -472,7 +472,7 @@ body.dark-theme {
 /*=============== FOOTER ===============*/
 .footer__copy {
     display: block;
-    margin: 3rem 0 2rem;
+    margin: 5rem 0 1rem;
     text-align: center;
     font-size: var(--smaller-font-size);
     color: var(--text-color);
@@ -627,6 +627,6 @@ body.dark-theme {
     }
 
     .footer__copy {
-        margin: 4.5rem 0 2.5rem;
+        margin: 5rem 0 1rem;
     }
 }
